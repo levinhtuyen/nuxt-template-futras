@@ -4,7 +4,7 @@
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about" id="about" data-section>
+      <section class="section about" id="about">
         <div class="container">
 
           <div class="about-banner img-holder" style="--width: 470; --height: 580;">

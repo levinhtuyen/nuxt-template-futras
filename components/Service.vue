@@ -4,7 +4,7 @@
         - #SERVICE
       -->
 
-      <section class="section service" aria-label="service" data-section>
+      <section class="section service" id="service" >
         <div class="container">
 
           <ul class="grid-list">
@@ -83,7 +83,11 @@
 </template>
 
 <script>
+  import ArrowForward from "vue-ionicons/dist/ios-arrow-forward.vue";
   export default {
+    components: {
+      ArrowForward,
+    },
 
   }
 </script>

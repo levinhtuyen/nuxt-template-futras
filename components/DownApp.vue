@@ -4,7 +4,7 @@
         - #APP
       -->
 
-      <section class="section app" aria-label="app" data-section>
+      <section class="section app" >
         <div class="container">
 
           <div class="app-card">
@@ -17,12 +17,12 @@
             </h2>
 
             <div class="wrapper">
-              <a href="#" class="app-link" aria-label="play store">
+              <a href="#" class="app-link">
                 <img src="~/assets/images/play-store.jpg" width="134" height="38" loading="lazy" alt="Play Store"
                   class="img">
               </a>
 
-              <a href="#" class="app-link" aria-label="app store">
+              <a href="#" class="app-link">
                 <img src="~/assets/images/app-store.jpg" width="132" height="38" loading="lazy" alt="App Store"
                   class="img">
               </a>

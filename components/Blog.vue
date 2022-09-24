@@ -4,7 +4,7 @@
         - #BLOG
       -->
 
-      <section class="section blog" aria-label="blog" id="blog" data-section>
+      <section class="section blog" id="blog">
         <div class="container">
 
           <div class="title-wrapper">
@@ -20,7 +20,7 @@
 
                 <div class="wrapper">
 
-                  <time class="publish-date" datetime="2022-02-24">
+                  <time class="publish-date" >
                     <span class="span">24</span> Feb
                   </time>
 
@@ -62,7 +62,7 @@
 
                 <div class="wrapper">
 
-                  <time class="publish-date" datetime="2022-02-24">
+                  <time class="publish-date" >
                     <span class="span">24</span> Feb
                   </time>
 
@@ -104,7 +104,7 @@
 
                 <div class="wrapper">
 
-                  <time class="publish-date" datetime="2022-02-24">
+                  <time class="publish-date" >
                     <span class="span">24</span> Feb
                   </time>
 

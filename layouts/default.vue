@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <body>
+
     <NavBar />
     <div id="app">
       <Nuxt />
@@ -12,7 +13,7 @@
     <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
       <ChevronUp />
     </a>
-  </div>
+  </body>
 </template>
 <script>
   import ChevronUp from 'vue-ionicons/dist/md-arrow-down.vue'

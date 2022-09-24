@@ -1,56 +1,70 @@
 <template>
-  <b-navbar toggleable="lg" fixed="top" type="light" variant="light">
-    <b-navbar-brand tag="h1" to="/" style="font-weight: bolder"
-      >Profile</b-navbar-brand
-    >
-    <b-navbar-toggle
-      target="nav-collapse"
-      style="border-radius: 0"
-    ></b-navbar-toggle>
+<div>
+  <header class="header" >
+    <div class="container">
 
-    <b-collapse
-      id="nav-collapse"
-      is-nav
-      class="animate__animated animate__fadeInDown"
-    >
-      <b-navbar-nav>
-        <b-nav-item to="/">Home</b-nav-item>
-        <b-nav-item to="/about">About</b-nav-item>
-        <b-nav-item to="/projects">Projects</b-nav-item>
-        <b-nav-item to="/articles">Articles</b-nav-item>
-        <b-nav-item to="/contact">Contact Me</b-nav-item>
-        <b-nav-item
-          href="#"
-          v-if="themeMode == 'dark'"
-          @click="toggleDarkMode"
-          class="moon-icon"
-          title="Toggle Darkmode"
-        >
-          <SunnyIcon style="color: #eee; font-size: 20px" />
-        </b-nav-item>
-        <b-nav-item
-          href="#"
-          v-else
-          @click="toggleDarkMode"
-          class="moon-icon"
-          title="Toggle Darkmode"
-        >
-          <MoonIcon style="color: #000; font-size: 20px" />
-        </b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+      <a href="#" class="logo">
+        Futras<span class="span">.</span>
+      </a>
+
+      <nav class="navbar" >
+
+        <button class="nav-toggle-btn">
+          <CloseIcon />
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#course" class="navbar-link">All Course</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Sign Up</a>
+
+      <button class="nav-toggle-btn" >
+        <MenuIcon />
+      </button>
+
+      <div class="overlay"></div>
+
+    </div>
+  </header>
+</div>
 </template>
 
 <script>
 require("vue-ionicons/ionicons.css");
 import SunnyIcon from "vue-ionicons/dist/md-sunny.vue";
 import MoonIcon from "vue-ionicons/dist/md-moon.vue";
+import CloseIcon from "vue-ionicons/dist/ios-close-circle.vue"
+import MenuIcon from "vue-ionicons/dist/md-menu.vue"
 export default {
   name: "NavBar",
   components: {
     SunnyIcon,
     MoonIcon,
+    MenuIcon,
+    CloseIcon
   },
   data() {
     return {

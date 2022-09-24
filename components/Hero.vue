@@ -3,7 +3,7 @@
     <!--
         - #HERO
       -->
-    <section class="section hero" aria-label="hero" id="home" data-section>
+    <section class="section hero" id="hero" >
         <div class="container">
 
           <p class="hero-subtitle">Fitness & Nutrition</p>
@@ -56,7 +56,16 @@
 </template>
 
 <script>
+
+import LogoFacebook from "vue-ionicons/dist/logo-facebook.vue";
+import TwitterIcon from "vue-ionicons/dist/logo-twitter.vue";
+import LogoGithub from "vue-ionicons/dist/logo-github.vue";
   export default {
+    components: {
+      LogoFacebook,
+      TwitterIcon,
+      LogoGithub
+    },
 
   }
 </script>

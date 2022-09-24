@@ -5,7 +5,7 @@
         - #COURSE
       -->
 
-      <section class="section course" aria-label="course" id="course" data-section>
+      <section class="section course"  id="course" >
         <div class="container">
 
           <div class="title-wrapper">
@@ -26,7 +26,7 @@
 
                 <div class="card-content">
 
-                  <data class="card-price" value="98">$98</data>
+                  <data class="card-price" >$98</data>
 
                   <p class="card-author">
                     <a href="#" class="card-link">
