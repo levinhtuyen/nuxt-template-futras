@@ -124,7 +124,7 @@
 
     <p class="copyright">
       &copy; 2022 Futras Made With
-      <ion-icon name="heart" aria-hidden="true"></ion-icon> by
+      <LogoGithub /> by
       <a href="#" class="copyright-link">codewithsadee</a>
     </p>
 
@@ -155,7 +155,11 @@
 </template>
 
 <script>
+  import LogoGithub from "vue-ionicons/dist/logo-github.vue";
   export default {
+    components: {
+      LogoGithub,
+    },
 
   }
 </script>

@@ -1,89 +1,45 @@
 <template>
-  <b-row style="margin-left: 0; margin-right: 0">
-    <b-col md="4">
-      <b-img
-        :src="avatar"
-        id="Tuyến Memoji"
-        @mouseenter="changeAvatar"
-        @mouseleave="changeAvatar"
-      />
-    </b-col>
-
-    <b-col md="8">
-      <h2 class="intro animate__animated animate__fadeInUp animate__fast">
-        Hi 👋,
-        <br />I<span>'m Lê Vĩnh Tuyến</span>.
-      </h2>
-
-      <div class="col-md-10 info">
-        A <b>front-end developer</b> and <b>technical writer</b> passionate
-        about solving problems with tech.<br />
-        I am skilled with building exceptional <b>websites</b>
-        <b>Vuejs, Vite, NuxtJs</b>
-        <br />
-        I am skilled with CSS frameworks:
-        <b>Bootstrap, Quasar, ElementUI, TailwindCSS ... </b>
-        <b-button
-          class="action-btn animate__animated animate__wobble animate__delay-4s animate__fast"
-          to="/projects"
-        >
-          Explore >
-        </b-button>
-
-        <b-button class="action-btn" to="/contact" variant="primary">
-          Get In Touch
-        </b-button>
-
-        <!-- .SOCIAL LINKS SECTION -->
-        <div
-          class="social-icons animate__animated animate__fadeInUp animate__delay-1s"
-        >
-          <social-link :to="socialLinks.github">
-            <GithubIcon />
-          </social-link>
-
-          <!-- <social-link :to="socialLinks.linkedin">
-            <LinkedinIcon />
-          </social-link> -->
-
-          <!-- <social-link :to="socialLinks.twitter">
-            <TwitterIcon />
-          </social-link> -->
-
-          <social-link :to="socialLinks.facebook">
-            <FacebookIcon />
-          </social-link>
-
-          <social-link :to="socialLinks.mail">
-            <MailIcon />
-          </social-link>
-
-          <!-- <social-link :to="socialLinks.youtube">
-            <YoutubeIcon />
-          </social-link> -->
-        </div>
-      </div>
-    </b-col>
-  </b-row>
+<div>
+  <main>
+    <article>
+      <HeroVue />
+      <ServiceVue />
+      <AboutVue />
+      <CourseVue />
+      <BlogVue />
+      <DownAppVue />
+    </article>
+  </main>
+</div>
 </template>
 
 <script>
-import GithubIcon from "vue-ionicons/dist/logo-github.vue";
-// import LinkedinIcon from "vue-ionicons/dist/logo-linkedin.vue";
-// import TwitterIcon from "vue-ionicons/dist/logo-twitter.vue";
-import FacebookIcon from "vue-ionicons/dist/logo-facebook.vue";
-import YoutubeIcon from "vue-ionicons/dist/logo-youtube.vue";
+import ArrowForward from "vue-ionicons/dist/ios-arrow-forward.vue";
+import TwitterIcon from "vue-ionicons/dist/logo-twitter.vue";
 import MailIcon from "vue-ionicons/dist/md-mail.vue";
-
+import LogoFacebook from "vue-ionicons/dist/logo-facebook.vue";
+import LogoGithub from "vue-ionicons/dist/logo-github.vue";
+import AboutVue from "../components/About.vue";
+import BlogVue from "../components/Blog.vue";
+import CourseVue from "../components/Course.vue";
+import HeroVue from "../components/Hero.vue";
+import DownAppVue from "../components/DownApp.vue";
+import ServiceVue from "../components/Service.vue";
 export default {
   components: {
-    GithubIcon,
     // LinkedinIcon,
-    // TwitterIcon,
-    FacebookIcon,
-    YoutubeIcon,
+    ArrowForward,
+    TwitterIcon,
     MailIcon,
-  },
+    LogoFacebook,
+    LogoGithub,
+    AboutVue,
+    BlogVue,
+    CourseVue,
+    HeroVue,
+    DownAppVue,
+    ServiceVue
+},
 
   data() {
     return {
