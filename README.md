@@ -1,1 +1,1 @@
-# nuxt-template-futras
+# profile_nuxt
